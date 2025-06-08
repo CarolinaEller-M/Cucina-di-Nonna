@@ -299,9 +299,44 @@
                       </div>
                   </div>
               </section>
+              
+              <!--Campo de avaliações-->
+              <div class="container-avaliacoes">
+                  <h1><strong>Avaliações</strong></h1>
+                  
+                  <div class="comment-form">
+                      <h2>Deixe seu comentário</h2>
+                      <div class="rating">
+                          <span>Avalie:</span>
+                          <span class="star" data-value="1">★</span>
+                          <span class="star" data-value="2">★</span>
+                          <span class="star" data-value="3">★</span>
+                          <span class="star" data-value="4">★</span>
+                          <span class="star" data-value="5">★</span>
+                          <input type="hidden" id="rating-value" value="0">
+                      </div>
+                      <input type="text" id="username" placeholder="Seu nome" required>
+                      <textarea id="comment-text" placeholder="Digite seu comentário aqui..." required></textarea>
+                      <button id="submit-btn">Enviar Comentário</button>
+                  </div>
+           
+                <div class="comments-section">
+                    <h2>Comentários</h2>
+                    <div id="comments-container">
+                        <!-- Os comentários serão inseridos aqui via JavaScript -->
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
               <div class="d-flex justify-content-center py-3 px-5"> <!-- py-3 adiciona um padding vertical -->
                 <a href="#" class="btn btn-laranja btn-lg">Reserve sua mesa</a>
               </div>
+
+
     </div>
 
     <!-- FOOTER COMEÇO -->
@@ -380,6 +415,118 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script  src="public/js/app.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+            const submitBtn = document.getElementById('submit-btn');
+            const usernameInput = document.getElementById('username');
+            const commentText = document.getElementById('comment-text');
+            const commentsContainer = document.getElementById('comments-container');
+            const stars = document.querySelectorAll('.star');
+            const ratingInput = document.getElementById('rating-value');
+            
+            let selectedRating = 0;
+            let hoverRating = 0;
+            
+            // Adiciona eventos para as estrelas de avaliação
+            stars.forEach(star => {
+                // Clique para selecionar a avaliação
+                star.addEventListener('click', function() {
+                    selectedRating = parseInt(this.getAttribute('data-value'));
+                    ratingInput.value = selectedRating;
+                    updateStars();
+                });
+                
+                // Efeito hover
+                star.addEventListener('mouseover', function() {
+                    hoverRating = parseInt(this.getAttribute('data-value'));
+                    updateStars();
+                });
+                
+                star.addEventListener('mouseout', function() {
+                    hoverRating = 0;
+                    updateStars();
+                });
+            });
+            
+            // Função para atualizar a aparência das estrelas
+            function updateStars() {
+                const ratingToShow = hoverRating || selectedRating;
+                
+                stars.forEach(star => {
+                    const value = parseInt(star.getAttribute('data-value'));
+                    
+                    // Remove todas as classes de estado
+                    star.classList.remove('selected', 'hover');
+                    
+                    // Adiciona classes apropriadas
+                    if (value <= ratingToShow) {
+                        if (hoverRating && !selectedRating) {
+                            star.classList.add('hover');
+                        } else if (selectedRating) {
+                            star.classList.add('selected');
+                        }
+                    }
+                });
+            }
+            
+            // Adiciona evento para o botão de enviar
+            submitBtn.addEventListener('click', function() {
+                const username = usernameInput.value.trim();
+                const text = commentText.value.trim();
+                const rating = parseInt(ratingInput.value);
+                
+                if (!username || !text) {
+                    alert('Por favor, preencha seu nome e o comentário!');
+                    return;
+                }
+                
+                if (rating === 0) {
+                    alert('Por favor, selecione uma avaliação!');
+                    return;
+                }
+                
+                // Cria um novo comentário
+                addComment(username, text, rating);
+                
+                // Limpa os campos do formulário
+                usernameInput.value = '';
+                commentText.value = '';
+                selectedRating = 0;
+                ratingInput.value = '0';
+                updateStars();
+            });
+            
+            // Função para adicionar um novo comentário
+            function addComment(username, text, rating) {
+                const commentDiv = document.createElement('div');
+                commentDiv.className = 'comment';
+                
+                const now = new Date();
+                const dateStr = now.toLocaleDateString('pt-BR') + ' ' + now.toLocaleTimeString('pt-BR');
+                
+                // Cria a estrutura do comentário
+                commentDiv.innerHTML = `
+                    <div class="comment-header">
+                        <span>${username}</span>
+                        <span class="comment-rating">${'★'.repeat(rating)}${'☆'.repeat(5 - rating)}</span>
+                    </div>
+                    <div class="comment-text">${text}</div>
+                    <div class="comment-date">${dateStr}</div>
+                `;
+                
+                // Adiciona o comentário no topo da lista
+                commentsContainer.prepend(commentDiv);
+            }
+            
+            // Opcional: Permitir enviar com Enter (mas manter o textarea com quebra de linha)
+            commentText.addEventListener('keydown', function(e) {
+                if (e.ctrlKey && e.key === 'Enter') {
+                    submitBtn.click();
+                }
+            });
+        });
+    </script>
   </body>
 
 </html>

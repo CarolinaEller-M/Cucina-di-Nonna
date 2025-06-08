@@ -772,6 +772,14 @@
   padding: 2rem 0;
 }
 
+.section-heading h1{
+  font-size: 60px
+}
+
+.section-heading h4{
+  font-size: 30px
+}
+
 #tranding {
   padding: 4rem 0;
 }
@@ -950,6 +958,118 @@
   background-color: #e05a2b;
   border-color: #e05a2b;
   transform: translateY(-2px) scale(1.02); /* Efeito de levantar + zoom sutil */
+}
+
+/*AVALIAÇÕES E COMENTARIOS*/
+.container-avaliacoes {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container-avaliacoes h1,h2{
+
+  font-size: 2rem;
+  color: var(--primary);
+  padding: 2rem 0;
+
+}
+
+.comment-form h2{
+  font-style: italic;
+  font-size: 20px;
+  color: var(--primary);
+  padding: 2rem 0;
+
+}
+.comment-form {
+    
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+
+.rating {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.rating span:first-child {
+    margin-right: 10px;
+}
+
+.star {
+    font-size: 24px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s;
+    margin-right: 5
+}
+
+.star:hover,
+.star.hover,
+.star.selected {
+    color: #f39c12;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #2980b9;
+        }
+
+        .comments-section {
+            margin-top: 30px;
+        }
+
+        .comment {
+            background: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border-left: 3px solid #3498db;
+        }
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: bold;
+ }
+
+.comment-rating {
+    color: #f39c12;
+}
+
+.comment-date {
+    color: #7f8c8d;
+    font-size: 0.9em;
 }
 /*Fim Cartão Presente*/
 /*Compre cartao*/
