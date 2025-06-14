@@ -27,9 +27,9 @@ html,body{
 }
 
 .wrapper {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
 
 .main-content {
@@ -126,20 +126,18 @@ body
 #tabela {
     margin-top: 15%;
     margin-bottom: 5%;
-    position: relative;
-    top: 25%;
-    left: 1%;
-    right: 1%;
     border-radius: 7px;
-}
-.card{
-    position: absolute;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 .card-container{
     margin-bottom: 100px;
 }
 .container-card-reserva {
     margin-top: 2rem;
+    margin-bottom:2rem;
     display: flex;
     justify-content: center;
 }
@@ -174,47 +172,178 @@ body
     to { opacity: 1; transform: translateY(0); }
 }
 /*====================== FOOTER ===================*/
-footer{
+.footer-luxury {
+    background-color: #171718;
+    border-top: 3px solid #247543;
+    color: #fff;
+    font-size: 14px;
+    padding: 0;
+}
+
+
+.footer-luxury a {
+    color: #aaa;
+    transition: all 0.3s ease;
+}
+
+.footer-luxury a:hover {
+    color: var(--gold-color);
+    text-decoration: none;
+}
+
+.footer-top {
+    padding: 60px 0 30px;
+    background-color: #1a1a1a;
+}
+
+.footer-contact h3 {
+    font-size: 24px;
+    margin: 0 0 20px;
+    padding: 0;
+    line-height: 1;
+    font-weight: 600;
+    color: var(--gold-color);
+}
+
+.footer-contact p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    color: #aaa;
+}
+
+.footer-links h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    position: relative;
+    padding-bottom: 12px;
+    margin-bottom: 15px;
+}
+
+.footer-links h4::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: var(--gold-color);
+    bottom: 0;
+    left: 0;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
     margin: 0;
 }
-.footer-aluno {
-    background-color: #555;
-    color: white;
-    padding: 20px 0;
-    font-family: Arial, sans-serif;
-}
-.footer-container {
-    display: flex;
-    justify-content: space-around;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+
+.footer-links ul li {
+    padding: 5px 0;
 }
 
-.footer-section {
-    flex: 1;
-    padding: 0 5px;
+.footer-links ul i {
+    font-size: 12px;
+    margin-right: 5px;
 }
 
-.footer-section h3 {
-    border-bottom: 2px solid white;
-    padding-bottom: 10px;
+.footer-newsletter h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    position: relative;
+    padding-bottom: 12px;
     margin-bottom: 15px;
-    
 }
-.footer-bottom {
+
+.footer-newsletter h4::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: var(--gold-color);
+    bottom: 0;
+    left: 0;
+}
+
+.footer-newsletter p {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.footer-newsletter input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    background: #222;
+    color: #fff;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.footer-newsletter button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: var(--gold-color);
+    color: #000;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.footer-newsletter button:hover {
+    background: #c9a227;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background: #222;
+    color: #fff;
+    border-radius: 50%;
     text-align: center;
-    padding-top: 20px;
-    border-top: 1px solid #555;
-    margin-top: 20px;
+    line-height: 36px;
+    margin-right: 8px;
+    transition: all 0.3s ease;
 }
-/*====================== MEDIA QUERIE ===================*/
+
+.social-links a:hover {
+    background: var(--gold-color);
+    color: #000;
+}
+
+.footer-bottom {
+    padding: 20px 0;
+    background-color: #000;
+    text-align: center;
+}
+
+.footer-bottom .copyright {
+    color: #aaa;
+    font-size: 13px;
+}
+
+.footer-bottom .credits {
+    color: #aaa;
+    font-size: 13px;
+}
+
+.footer-bottom .credits a {
+    color: var(--gold-color);
+}
+/*====================== MEDIA QUERY ===================*/
 @media (max-width: 768px) {
     body {
         margin: 0 15px;
         padding-top: 80px; 
     }
-    
+    .wrapper{
+        margin-bottom: 250px;
+    }
     #tabela {
         top: auto;
         left: auto;
@@ -256,14 +385,6 @@ footer{
         min-width: 100%;
         width: 100%;
     }
-    .footer-container {
-        flex-direction: column;
-    }
-
-    .footer-section {
-        margin-bottom: 20px;
-    }
-
     #tabela{
         position: absolute;
         top: 35%;
