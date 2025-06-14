@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <!-- CABEÇALHO COMEÇO - METADADOS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cucina Alergênico</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="public/css/style.css">
+  <link rel="icon" href="public/img/logo-favincon/Abstract Chef Cooking Restaurant Free Logo (1).jpg"
+    type="image/x-icon">
+  <!-- CABEÇALHO FIM -->
+  <style>
+    :root {
+      --main-color: #fff8e1;
+      --text-color: #171718;
+      --text-color2: #fafafa;
+      --cp-color: #a41414;
+      --cs-color: #247543;
+      --detalhes-bg: #6b4423;
+      --detalhes-bg2: #8d6e63;
+      --destaques-bg: #d4af37;
+      --transition: all 0.4s ease;
+    }
+
+    body {
+      font-family: 'Times New Roman', serif;
+      margin: 0;
+      overflow-x: hidden;
+      background-color: var(--main-color);
+      color: var(--text-color);
+    }
+
+    .header {
+      color: var(--text-color2);
+      padding: 20px 0;
+      text-transform: uppercase;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    main {
+      padding: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    th,
+    td {
+      border: 1px solid var(--detalhes-bg2);
+      padding: 10px;
+      text-align: left;
+      font-size: 13px;
+      vertical-align: top;
+    }
+
+    th {
+      background-color: var(--detalhes-bg);
+      color: var(--text-color2);
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+
+    .section-title {
+      background-color: var(--detalhes-bg2);
+      color: var(--text-color2);
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+
+    .contains {
+      background-color: var(--cp-color);
+      color: var(--text-color2);
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .does-not-contain {
+      background-color: var(--cs-color);
+      color: var(--text-color2);
+      text-align: center;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 11px;
+      margin-top: 40px;
+      color: var(--detalhes-bg);
+      border-top: 1px solid var(--detalhes-bg);
+      padding-top: 10px;
+    }
+
+    .wine-pairing {
+      font-style: italic;
+      font-size: 12px;
+      color: var(--detalhes-bg);
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header navbar navbar-expand-lg navbar-light ">
+    <div class="container-fluid">
+      <a href="index.html" class="navbar-brand me-0" id="logo">
+        <img class="img-logo" id="img-logo" src="public/img/logo-favincon/Logo.jpg" alt="Cucina di Nonna" width="150"
+          height="130">
+      </a>
+
+      <div class="container align-items-center justify-content-center fade-in-item mb-3"
+        style="animation-delay: 1s; color: #6b4423;">
+        <h1 class="text-center fw-bold fs-1 mb-4">Tabela Alergênicos</h1>
+        <p class="text-center fs-4">Cuccina di Nonna | CHEF EXECUTIVO: Emmanuel Bassoleil</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 20%">PRATO</th>
+          <th style="width: 30%">INGREDIENTES</th>
+          <th>TRIGO/CEVADA/CENTEIO/AVEIA</th>
+          <th>OVOS</th>
+          <th>PEIXES/FRUTOS DO MAR</th>
+          <th>SOJA</th>
+          <th>LEITE</th>
+          <th>OLEAGINOSAS</th>
+          <th>AMENDOIM</th>
+          <th>GLÚTEN</th>
+          <th>LACTOSE</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- ENTRADAS -->
+        <tr>
+          <td colspan="11" class="section-title">Antipasti (Entradas)</td>
+        </tr>
+        <tr>
+          <td><strong>Bruschetta al Pomodoro</strong></td>
+          <td>Pão italiano, tomates frescos, alho, manjericão, azeite de oliva extra virgem</td>
+          <td class="contains">X</td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="contains">X</td>
+          <td class="does-not-contain"></td>
+        </tr>
+        <tr>
+          <td><strong>Carpaccio di Manzo</strong><br><span class="wine-pairing">Harmonização: Barolo DOCG</span></td>
+          <td>Filé mignon bovino, rúcula, queijo parmesão, alcaparras, azeite trufado, limão siciliano</td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="contains">X</td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="contains">X</td>
+        </tr>
+        <!-- PRATOS PRINCIPAIS -->
+        <tr>
+          <td colspan="11" class="section-title">Primi Piatti (Massas)</td>
+        </tr>
+        <tr>
+          <td><strong>Spaghetti Carbonara</strong><br><span class="wine-pairing">Harmonização: Chianti Classico</span>
+          </td>
+          <td>Spaghetti, guanciale (bochecha de porco), ovos, queijo pecorino romano, pimenta preta</td>
+          <td class="contains">X</td>
+          <td class="contains">X</td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="contains">X</td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="contains">X</td>
+          <td class="contains">X</td>
+        </tr>
+        <tr>
+          <td><strong>Risotto ai Frutti di Mare</strong></td>
+          <td>Arroz arbóreo, lula, camarão, mexilhão, vinho branco, alho, açafrão, caldo de peixe</td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="contains">X</td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+        </tr>
+        <!-- PRATO DO CHEF -->
+        <tr>
+          <td colspan="11" class="section-title">Piatto del Chef</td>
+        </tr>
+        <tr>
+          <td><strong>Ossobuco alla Milanese</strong><br><span class="wine-pairing">Harmonização: Amarone della
+              Valpolicella</span></td>
+          <td>Ossobuco de vitela, gremolada (limão, alho, salsinha), vinho branco, tomate, cebola, cenoura, aipo</td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+        </tr>
+        <!-- FRUTOS DO MAR -->
+        <tr>
+          <td colspan="11" class="section-title">Frutti di Mare</td>
+        </tr>
+        <tr>
+          <td><strong>Branzino al Forno</strong></td>
+          <td>Robalo inteiro, batatas, tomate cereja, azeitonas kalamata, limão, alecrim, azeite</td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="contains">X</td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+        </tr>
+        <!-- SALADAS -->
+        <tr>
+          <td colspan="11" class="section-title">Insalate</td>
+        </tr>
+        <tr>
+          <td><strong>Insalata Caprese</strong></td>
+          <td>Tomate italiano, mussarela de búfala, manjericão fresco, azeite, flor de sal</td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="contains">X</td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="contains">X</td>
+        </tr>
+        <!-- DRINKS -->
+        <tr>
+          <td colspan="11" class="section-title">Aperitivi e Digestivi</td>
+        </tr>
+        <tr>
+          <td><strong>Negroni</strong></td>
+          <td>Gin, Campari, Vermute tinto, laranja</td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+        </tr>
+        <tr>
+          <td><strong>Limoncello Spritz</strong></td>
+          <td>Limoncello, Prosecco, soda, hortelã</td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+        </tr>
+        <!-- SOBREMESAS -->
+        <tr>
+          <td colspan="11" class="section-title">Dolci</td>
+        </tr>
+        <tr>
+          <td><strong>Tiramisù Classico</strong></td>
+          <td>Biscoito champanhe, café expresso, mascarpone, ovos, cacau em pó</td>
+          <td class="contains">X</td>
+          <td class="contains">X</td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="contains">X</td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="contains">X</td>
+          <td class="contains">X</td>
+        </tr>
+        <tr>
+          <td><strong>Panna Cotta ai Frutti di Bosco</strong></td>
+          <td>Creme de leite, baunilha, gelatina, frutas vermelhas frescas</td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="contains">X</td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="contains">X</td>
+        </tr>
+        <!-- VINHOS -->
+        <tr>
+          <td colspan="11" class="section-title">Vini</td>
+        </tr>
+        <tr>
+          <td><strong>Barolo DOCG</strong></td>
+          <td>Uvas Nebbiolo, fermentação natural, envelhecimento em carvalho</td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+        </tr>
+        <tr>
+          <td><strong>Prosecco Superiore DOCG</strong></td>
+          <td>Uvas Glera, fermentação Charmat</td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+          <td class="does-not-contain"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="d-flex justify-content-center mx-auto mb-2 mt-5 mb-lg-0">
+      <a href="index.html" target="_blank" class="btn btn-success ">voltar</a>
+    </div>
+  </main>
+
+  <!-- FOOTER COMEÇO -->
+  <footer class="footer-luxury">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Cucina di Nonna</h3>
+            <p>
+              Rua de Tiaw, 123, Bairro Savassi
+              Belo Horizonte, MG Brazil 04543-011<br>
+              Brasil <br><br>
+              <strong>Telefone:</strong> +55 11 1234-5678<br>
+              <strong>Email:</strong> contato@cucinadionna.com.br<br>
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Links Úteis</h4>
+            <ul>
+              <li><i class="fas fa-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="fas fa-chevron-right"></i> <a href="#chefs">Nossos Chefs</a></li>
+              <li><i class="fas fa-chevron-right"></i> <a href="#cardapio">Cardápio</a></li>
+              <li><i class="fas fa-chevron-right"></i> <a href="#sobre">Sobre Nós</a></li>
+              <li><i class="fas fa-chevron-right"></i> <a href="#tabela">Tabela Alergênica</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Nossos Serviços</h4>
+            <ul>
+              <li><i class="fas fa-chevron-right"></i> <a href="#">Jantares Privativos</a></li>
+              <li><i class="fas fa-chevron-right"></i> <a href="#">Eventos Corporativos</a></li>
+              <li><i class="fas fa-chevron-right"></i> <a href="#">Degustação de Vinhos</a></li>
+              <li><i class="fas fa-chevron-right"></i> <a href="#">Cursos de Culinária</a></li>
+              <li><i class="fas fa-chevron-right"></i> <a href="#">Presentes Gastronômicos</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4>Newsletter</h4>
+            <p>Receba nossas novidades e promoções exclusivas</p>
+            <form action="" method="post">
+              <input type="email" name="email" placeholder="Seu melhor email">
+              <button type="submit">Assinar</button>
+            </form>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="copyright">
+              &copy; 2025 <strong>Cucina di Nonna</strong>. Todos os direitos reservados.
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="credits">
+              Tabela-Alergenico desenvolvido por <a href="#">Carolina Eller Marinho de Paula</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- FOOTER FIM -->
+
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cucina di Nonna</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="public/css/cardapio.css">
+    <link rel="icon" href="public/img/logo-favincon/Abstract Chef Cooking Restaurant Free Logo (1).jpg" type="image/x-icon">
+    <script src="public/js/cardapio.js"></script>
+</head>
+
+<body id="body">
+    <header id="header" class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand me-0" id="logo">
+                <img class="img-logo" id="img-logo" src="public/img/logo-favincon/logo2.png" alt="Cucina di Nonna" width="150" height="130">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul id="navbar" class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">Nonna Home</a></li>
+                    <li class="nav-item"><a href="#chefs" class="nav-link">Chef's</a></li>
+                    <li class="nav-item"><a href="#cardapio" class="nav-link">Cardápio</a></li>
+                    <li class="nav-item"><a href="#sobre" class="nav-link">Sobre nós</a></li>
+                    <li class="nav-item"><a href="#tabela" class="nav-link">Tabela Alergênico</a></li>
+                </ul>
+                <div class="d-flex">
+                    <a href="#" target="_blank" class="btn btn-success">Login</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>    
+        <div class="menu-items">
+            <div class="menu-item" onclick="openModal('pratos')">
+                <img src="https://s2-casavogue.glbimg.com/UeDG0vxukcsF7xB85E3cR2lIG88=/0x0:620x826/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_d72fd4bf0af74c0c89d27a5a226dbbf8/internal_photos/bs/2023/l/8/taKzPoSFm2OGWPOaB0jQ/receita-macarrao-molho-bolonhesa.jpeg" alt="">
+                <p class="section-cardp">Pratos</p>
+            </div>
+            
+            <div class="menu-item" onclick="openModal('drinks')">
+                <img src="https://img.freepik.com/fotos-gratis/um-copo-de-coquetel-frio-de-morango-com-folhas-e-tubos-de-alecrim-fresco_114579-1808.jpg" alt="">
+                <p>Drinks</p>
+            </div>
+            
+            <div class="menu-item" onclick="openModal('vinhos')">
+                
+                <img src="https://clubemalucosporvinho.com.br/wp-content/uploads/2019/02/o_clube_como_funciona_1.jpg" alt="">
+                <p>Vinhos</p>
+            </div>
+        </div>
+        <div id="menuModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+                <div class="modal-header">
+                    <h2 id="modalTitle">Cardápio de Pratos</h2>
+                </div>
+                <div class="modal-body">
+                    <ul class="menu-list" id="menuList">
+                        <!--  JS -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+       
+
+        
+
+    </main>
+    <footer class="footer-luxury">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>Cucina di Nonna</h3>
+                        <p>
+                            Av. Presidente Juscelino Kubitschek, 2041<br>
+                            São Paulo, SP 04543-011<br>
+                            Brasil <br><br>
+                            <strong>Telefone:</strong> +55 11 1234-5678<br>
+                            <strong>Email:</strong> contato@cucinadionna.com.br<br>
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Links Úteis</h4>
+                        <ul>
+                            <li><i class="fas fa-chevron-right"></i> <a href="#">Home</a></li>
+                            <li><i class="fas fa-chevron-right"></i> <a href="#chefs">Nossos Chefs</a></li>
+                            <li><i class="fas fa-chevron-right"></i> <a href="#cardapio">Cardápio</a></li>
+                            <li><i class="fas fa-chevron-right"></i> <a href="#sobre">Sobre Nós</a></li>
+                            <li><i class="fas fa-chevron-right"></i> <a href="#tabela">Tabela Alergênica</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Nossos Serviços</h4>
+                        <ul>
+                            <li><i class="fas fa-chevron-right"></i> <a href="#">Jantares Privativos</a></li>
+                            <li><i class="fas fa-chevron-right"></i> <a href="#">Eventos Corporativos</a></li>
+                            <li><i class="fas fa-chevron-right"></i> <a href="#">Degustação de Vinhos</a></li>
+                            <li><i class="fas fa-chevron-right"></i> <a href="#">Cursos de Culinária</a></li>
+                            <li><i class="fas fa-chevron-right"></i> <a href="#">Presentes Gastronômicos</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer-newsletter">
+                        <h4>Newsletter</h4>
+                        <p>Receba nossas novidades e promoções exclusivas</p>
+                        <form action="" method="post">
+                            <input type="email" name="email" placeholder="Seu melhor email">
+                            <button type="submit">Assinar</button>
+                        </form>
+                        <div class="social-links mt-3">
+                            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="copyright">
+                            &copy; 2025 <strong>Cucina di Nonna</strong>. Todos os direitos reservados.
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="credits">
+                            Desenvolvido por <a href="#">Breno de Oliveira Hassel</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="public/js/app.js"></script>
+</body>
+</html>
