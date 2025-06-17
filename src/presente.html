@@ -276,67 +276,64 @@
 
     <div id="body">
       <section class="py-5">
-                  <div class="container">
-                      <div class="row">
-                          <div class="col-md-4">
-                              <h3> Eventos Especiais </h3>
-                              <p>
-                                   Transforme seu evento em uma celebração inesquecível. Nosso espaço está disponível para confraternizações, encontros corporativos e momentos especiais. Com um cardápio autêntico e atendimento atencioso, cuidamos de cada detalhe para você.
-                              </p>
-                          </div>
-                          <div class="col-md-4">
-                              <h3> Aniversários com Sabor </h3>
-                              <p>
-                                  Comemore seu aniversário com o calor da cozinha italiana e a hospitalidade mineira. Montamos menus especiais para grupos e deixamos tudo pronto para sua celebração ser cheia de afeto, sabor e boas lembranças.
-                              </p>
-                          </div>
-                          <div class="col-md-4">
-                              <h3> Reserve Sua Mesa </h3>
-                              <p>
-                                  Seja para um jantar a dois, um almoço em família ou um encontro entre amigos — sua mesa está te esperando. Faça sua reserva e venha viver uma experiência que mistura tradição, aroma e carinho em cada prato.
-                              </p>
-                          </div>
-                      </div>
-                  </div>
-              </section>
-              
-              <!--Campo de avaliações-->
-              <div class="container-avaliacoes">
-                  <h1><strong>Avaliações</strong></h1>
-                  
-                  <div class="comment-form">
-                      <h2>Deixe seu comentário</h2>
-                      <div class="rating">
-                          <span>Avalie:</span>
-                          <span class="star" data-value="1">★</span>
-                          <span class="star" data-value="2">★</span>
-                          <span class="star" data-value="3">★</span>
-                          <span class="star" data-value="4">★</span>
-                          <span class="star" data-value="5">★</span>
-                          <input type="hidden" id="rating-value" value="0">
-                      </div>
-                      <input type="text" id="username" placeholder="Seu nome" required>
-                      <textarea id="comment-text" placeholder="Digite seu comentário aqui..." required></textarea>
-                      <button id="submit-btn">Enviar Comentário</button>
-                  </div>
-           
-                <div class="comments-section">
-                    <h2>Comentários</h2>
-                    <div id="comments-container">
-                        <!-- Os comentários serão inseridos aqui via JavaScript -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3> Eventos Especiais </h3>
+                        <p>
+                          Transforme seu evento em uma celebração inesquecível. Nosso espaço está disponível para confraternizações, encontros corporativos e momentos especiais. Com um cardápio autêntico e atendimento atencioso, cuidamos de cada detalhe para você.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3> Aniversários com Sabor </h3>
+                          <p>
+                            Comemore seu aniversário com o calor da cozinha italiana e a hospitalidade mineira. Montamos menus especiais para grupos e deixamos tudo pronto para sua celebração ser cheia de afeto, sabor e boas lembranças.
+                          </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3> Reserve Sua Mesa </h3>
+                          <p>
+                            Seja para um jantar a dois, um almoço em família ou um encontro entre amigos — sua mesa está te esperando. Faça sua reserva e venha viver uma experiência que mistura tradição, aroma e carinho em cada prato.
+                          </p>
                     </div>
                 </div>
             </div>
+        </section>
+              
+        <!--Campo de avaliações-->
+        <div class="container-avaliacoes">
+            <h1><strong>Avaliações</strong></h1>
+            <div class="comment-form">
+                <h2>Deixe seu comentário</h2>
+                <div class="rating">
+                    <span>Avalie:</span>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                    <input type="hidden" id="rating-value" value="0">
+                </div>
 
+                <!-- Novo wrapper para alinhar os campos lado a lado -->
+                <div class="input-row">
+                    <input type="text" id="username" placeholder="Seu nome" required>
+                    <textarea id="comment-text" placeholder="Digite seu comentário aqui..." required></textarea>
+                </div>
 
+                <button id="submit-btn">Enviar Comentário</button>
+            </div>
 
-
-
+            <div class="comments-section">
+                <h2><strong>Comentários</strong></h2>
+                <div id="comments-container">
+                    <!-- Os comentários serão inseridos aqui via JavaScript -->
+                </div>
+            </div>
+          </div>
               <div class="d-flex justify-content-center py-3 px-5"> <!-- py-3 adiciona um padding vertical -->
                 <a href="#" class="btn btn-laranja btn-lg">Reserve sua mesa</a>
               </div>
-
-
     </div>
 
     <!-- FOOTER COMEÇO -->
