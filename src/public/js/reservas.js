@@ -13,20 +13,24 @@ document.addEventListener("DOMContentLoaded", function () {
         return container;
     }
 
-    function renderReservaCard(reserva) {
-        const container = getOrCreateCardContainer();
-        container.innerHTML = `
-            <div class="card-reserva-confirmada">
-                <div class="mensagem-reserva">Reserva confirmada!</div>
-                <div class="dados-reserva">
-                    <p><strong>Data:</strong> ${reserva.data}</p>
-                    <p><strong>Horário:</strong> ${reserva.horario}</p>
-                    <p><strong>Mesas:</strong> ${reserva.mesas}</p>
-                    <p><strong>Pessoas:</strong> ${reserva.pessoas}</p>
-                </div>
-            </div>
-        `;
-    }
+function renderReservaCard(reserva) {
+    const cardsContainer = document.getElementById("cards-reservas");
+    
+    const card = document.createElement("div");
+    card.className = "card-reserva-confirmada";
+    card.innerHTML = `
+        <div class="mensagem-reserva">Reserva confirmada!</div>
+        <div class="dados-reserva">
+            <p><strong>Data:</strong> ${reserva.data}</p>
+            <p><strong>Horário:</strong> ${reserva.horario}</p>
+            <p><strong>Mesas:</strong> ${reserva.mesas}</p>
+            <p><strong>Pessoas:</strong> ${reserva.pessoas}</p>
+        </div>
+    `;
+    
+    cardsContainer.appendChild(card);
+}
+
 
     function getHorarioTexto(valor) {
         const select = document.querySelector('select[aria-label="qtdepessoas"]');
@@ -36,8 +40,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function mostrarUltimaReserva() {
         const reservas = JSON.parse(localStorage.getItem("reservasCucina") || "[]");
+        const cardsContainer = document.getElementById("cards-reservas");
+        cardsContainer.innerHTML = ""; // Limpar container antes de adicionar
+        
         if (reservas.length > 0) {
-            renderReservaCard(reservas[reservas.length - 1]);
+            reservas.forEach(reserva => {
+                renderReservaCard(reserva);
+            });
         }
     }
 
