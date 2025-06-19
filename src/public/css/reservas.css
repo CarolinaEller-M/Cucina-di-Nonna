@@ -26,10 +26,17 @@ html,body{
     padding: 0;
 }
 
+.main-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 .wrapper {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    padding-bottom: 80px; /* Espaço inicial para evitar sobreposição */
 }
 
 .main-content {
@@ -41,8 +48,8 @@ main{
 body
 {  
     background-color: var(--main-color1);
-    margin-left: 75px;
-    margin-right: 75px;
+    margin-left: 0;
+    margin-right: 0;
     padding-bottom: 120px;
 }
 
@@ -124,8 +131,8 @@ body
 /*====================== Abaixo dos INPUTS ===================*/
 
 #tabela {
-    margin-top: 15%;
-    margin-bottom: 5%;
+    margin-top: 30%; /* Aumentado de 15% para 25% */
+    margin-bottom: 0%;
     border-radius: 7px;
     position: relative;
     top: 0;
@@ -138,8 +145,18 @@ body
 .container-card-reserva {
     margin-top: 2rem;
     margin-bottom:2rem;
+    
+}
+
+#cards-reservas {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
 }
 
 .card-reserva-confirmada {
@@ -171,6 +188,13 @@ body
     from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+/* Mensagem de erro */
+#mensagemErro {
+    display: none;
+    animation: fadeIn 0.3s;
+}
+
 /*====================== FOOTER ===================*/
 .footer-luxury {
     background-color: #171718;
@@ -349,7 +373,7 @@ body
         left: auto;
         right: auto;
         position: relative;
-        margin-top: 20px;
+        margin-top: 150px;
     }
 
     #navbar {
@@ -397,7 +421,19 @@ body
         padding: 0 15px;
         margin: 0 auto;
     }
+    
+    /* Cards em coluna em telas pequenas */
+    #cards-reservas {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card-reserva-confirmada {
+        width: 100%;
+        max-width: 100%;
+    }
 }
+
 @media (max-width: 992px) {
     #tabela .card {
         margin: 0 10px;

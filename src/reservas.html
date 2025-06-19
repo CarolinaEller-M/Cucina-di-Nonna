@@ -37,76 +37,79 @@
     </div>
 </header>
 <body>
-<div class="wrapper">
-    <section class="restaurant" id="tabela">
-        <div class="row justify-content-center"> 
-            <div class="col-lg-5 col-md-8 mb-4 me-lg-4"> 
-                <div class="card rounded-0 h-100" style="background-color: #76d59a; border: none;">
-                    <div class="card-body p-4">
-                        <h2 class="card-title text-center text-uppercase mb-4">FAÇA SUA RESERVA</h2>
-                        <form>
-                            <div class="mb-3">
-                                <label for="dataReserva" class="form-label">Data da Reserva</label>
-                                <input type="date" class="form-control" id="dataReserva" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="horaReserva" class="form-label">Horário da Reserva</label>
-                                <select class="form-select" aria-label="qtdepessoas">
-                                    <option selected>HORÁRIOS</option>
-                                    <option value="1">13:00</option>
-                                    <option value="2">13:30</option>
-                                    <option value="3">14:00</option>
-                                    <option value="4">14:30</option>
-                                    <option value="5">15:00</option>
-                                    <option value="6">15:30</option>
-                                    <option value="7">16:00</option>
-                                    <option value="8">16:30</option>
-                                    <option value="9">17:00</option>
-                                    <option value="10">17:30</option>
-                                    <option value="11">18:00</option>
-                                    <option value="12">18:30</option>
-                                    <option value="13">19:00</option>
-                                    <option value="14">19:30</option>
-                                    <option value="15">20:00</option>
-                                    <option value="16">20:30</option>
-                                    <option value="17">21:00</option>
-                                    <option value="15">21:30</option>
-                                    <option value="16">22:00</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <label for="qtdMesas" class="form-label">Quantidade de Mesas</label>
-                                <select class="form-select" id="qtdMesas" required>
-                                    <option selected disabled>Escolha uma opção</option>
-                                    <option value="1">1 Mesa</option>
-                                    <option value="2">2 Mesas</option>
-                                    <option value="3">3 Mesas</option>
-                                    <option value="4">4 Mesas</option>
-                                    <option value="5">5 Mesas</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <label for="qtdPessoas" class="form-label">Quantidade de Pessoas</label>
-                                <select class="form-select" id="qtdPessoas" required>
-                                    <option selected disabled>Escolha uma opção</option>
-                                    <option value="1">1 Pessoa</option>
-                                    <option value="2">2 Pessoas</option>
-                                    <option value="3">3 Pessoas</option>
-                                    <option value="4">4 Pessoas</option>
-                                    <option value="5">5 Pessoas</option>
-                                    <option value="6">7+ Pessoas</option>
-                                </select>
-                            </div>
-                            <div class="d-grid">
-                                <button type="submit" class="btn btn-dark text-uppercase">Confirmar Reserva</button>
-                            </div>
-                        </form>
+<div class="main-container">
+    <div class="wrapper">
+        <section class="restaurant" id="tabela">
+            <div class="row justify-content-center"> 
+                <div class="col-lg-5 col-md-8 mb-4"> 
+                    <div class="card rounded-0 h-100" style="background-color: #76d59a; border: none;">
+                        <div class="card-body p-4">
+                            <h2 class="card-title text-center text-uppercase mb-4">FAÇA SUA RESERVA</h2>
+                            <form id="reservaForm">
+                                <div id="mensagemErro" class="alert alert-danger d-none" role="alert"></div>
+                                <div class="mb-3">
+                                    <label for="dataReserva" class="form-label">Data da Reserva</label>
+                                    <input type="date" class="form-control" id="dataReserva" min="" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="horaReserva" class="form-label">Horário da Reserva</label>
+                                    <select class="form-select" id="horaReserva" required>
+                                        <option value="" selected disabled>HORÁRIOS</option>
+                                        <option value="1">13:00</option>
+                                        <option value="2">13:30</option>
+                                        <option value="3">14:00</option>
+                                        <option value="4">14:30</option>
+                                        <option value="5">15:00</option>
+                                        <option value="6">15:30</option>
+                                        <option value="7">16:00</option>
+                                        <option value="8">16:30</option>
+                                        <option value="9">17:00</option>
+                                        <option value="10">17:30</option>
+                                        <option value="11">18:00</option>
+                                        <option value="12">18:30</option>
+                                        <option value="13">19:00</option>
+                                        <option value="14">19:30</option>
+                                        <option value="15">20:00</option>
+                                        <option value="16">20:30</option>
+                                        <option value="17">21:00</option>
+                                        <option value="18">21:30</option>
+                                        <option value="19">22:00</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="qtdMesas" class="form-label">Quantidade de Mesas</label>
+                                    <select class="form-select" id="qtdMesas" required>
+                                        <option selected disabled>Escolha uma opção</option>
+                                        <option value="1">1 Mesa</option>
+                                        <option value="2">2 Mesas</option>
+                                        <option value="3">3 Mesas</option>
+                                        <option value="4">4 Mesas</option>
+                                        <option value="5">5 Mesas</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="qtdPessoas" class="form-label">Quantidade de Pessoas</label>
+                                    <select class="form-select" id="qtdPessoas" required>
+                                        <option selected disabled>Escolha uma opção</option>
+                                        <option value="1">1 Pessoa</option>
+                                        <option value="2">2 Pessoas</option>
+                                        <option value="3">3 Pessoas</option>
+                                        <option value="4">4 Pessoas</option>
+                                        <option value="5">5 Pessoas</option>
+                                        <option value="6">7+ Pessoas</option>
+                                    </select>
+                                </div>
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-dark text-uppercase">Confirmar Reserva</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="cards-reservas" class="container-card-reserva"></div>
-    </section>
+            <div id="cards-reservas" class="container-card-reserva"></div>
+        </section>
+    </div>
 </div>
 
     <footer class="footer-luxury">
