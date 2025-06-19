@@ -1,0 +1,154 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: #0a2113;
+  color: white;
+  width: 100%;
+  top: 0;
+  right: 0;
+  gap: 15rem;
+  z-index: 1000;
+  transition: var(--transition);
+  padding: 10px 0;
+}
+
+ #h1{
+  font-size: 36px;
+  margin: 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-sac {
+  padding: 0 10px;
+}
+
+main {
+  flex: 1;
+}
+
+.section {
+  background-color: #093813;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.section p {
+  font-size: 32px;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+}
+
+.button-orange {
+  display: inline-block;
+  padding: 25px 50px;
+  font-size: 30px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  background-color: #ff6600;
+  transition: all 0.2s ease-in-out;
+}
+
+.button-orange:hover {
+  background-color: #e65c00;
+  transform: scale(1.03);
+}
+
+.whatsapp-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6em;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: clamp(18px, 5vw, 30px);
+  color: white;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 8px;
+  background-color: #25D366;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.whatsapp-button:hover {
+  background-color: #1ebe5d;
+  transform: scale(1.03);
+}
+
+.whatsapp-img {
+  height: 1em;
+  width: auto;
+  vertical-align: middle;
+}
+
+.footer {
+  background-color: #0a2113;
+  color: #cfcfcfb4;
+  padding: 10px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer div {
+  margin: 4px 0;
+}
+
+@media (max-width: 600px) {
+  .cabecalho-sac {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .cabecalho-sac h1 {
+    font-size: 24px;
+  }
+
+  .logo-sac {
+    height: 60px;
+  }
+
+  .section p {
+    font-size: 20px;
+  }
+
+  .button-orange {
+    font-size: 22px;
+    padding: 15px 30px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
