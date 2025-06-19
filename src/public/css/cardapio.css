@@ -31,13 +31,13 @@
 /* ESTILOS GERAIS FIM */
 
 /* HEADER COMEÇO */
-#header {
+#header-cardapio {
     width: 100%;
     top: 0;
     right: 0;
     z-index: 1000;
     transition: var(--transition);
-    background: rgba(23, 23, 24, 0.274);
+    background: var(--text-color);
     box-shadow: 1px 4px 0.2em rgba(23, 23, 24, 0.35);
     padding: 10px 0;
 }
@@ -56,7 +56,10 @@
 #navbar {
     display: flex;
     justify-content: space-between;
-    column-gap: 2rem;
+    column-gap: 15rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
 #navbar .nav-link {

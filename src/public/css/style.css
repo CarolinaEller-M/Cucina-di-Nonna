@@ -37,7 +37,7 @@
     right: 0;
     z-index: 1000;
     transition: var(--transition);
-    background: rgba(23, 23, 24, 0.274);
+    background:#17171869;
     box-shadow: 1px 4px 0.2em rgba(23, 23, 24, 0.35);
     padding: 10px 0;
 }
@@ -695,11 +695,18 @@
 /* RESPONSIVIDADE FIM */
 
 /*Cartao Presente*/
-.faixa_presente{
-    background-color: var(--cp-color);
+
+#header-presente {
     width: 100%;
-    height: 50%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    transition: var(--transition);
+    background: var(--cp-color);
+    box-shadow: 1px 4px 0.2em rgba(23, 23, 24, 0.35);
+    padding: 10px 0;
 }
+
 
 .py-5 img{
     float: right;

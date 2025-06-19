@@ -1,116 +1,116 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cucina Reservas</title>
     <link rel="stylesheet" href="public/css/reservas.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" href="public/img/logo-favincon/Abstract Chef Cooking Restaurant Free Logo (1).jpg" type="image/x-icon">
+    <link rel="icon" href="public/img/logo-favincon/Abstract Chef Cooking Restaurant Free Logo (1).jpg"
+        type="image/x-icon">
 </head>
-<header id="header" class="navbar navbar-expand-lg fixed-top">
-    <div class="container-fluid">
-        <a href="#" class="navbar-brand me-0" id="logo">
-            <img class="img-logo" id="img-logo" src="public/img/logo-favincon/logo2.png" alt="" width="150px" height="130px">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarContent">
-            <ul id="navbar" class="navbar-nav mx-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a href="index.html" class="nav-link active">Nonna Home</a></li>
-                <li class="nav-item"><a href="#chefs" class="nav-link">Chef's</a></li>
-                <li class="nav-item"><a href="#cardapio" class="nav-link">Cardápio</a></li>
-                <li class="nav-item"><a href="#sobre" class="nav-link">Sobre nós</a></li>
-                <li class="nav-item"><a href="#tabela" class="nav-link">Tabela Alergênico</a></li>
-            </ul>
-            <div class="d-flex">
-                <a href="login.html" target="_blank" class="btn  btn-success">Login</a>
-            </div>
-        </div>
-    </div>
-</header>
+
 <body>
-<div class="main-container">
-    <div class="wrapper">
-        <section class="restaurant" id="tabela">
-            <div class="row justify-content-center"> 
-                <div class="col-lg-5 col-md-8 mb-4"> 
-                    <div class="card rounded-0 h-100" style="background-color: #76d59a; border: none;">
-                        <div class="card-body p-4">
-                            <h2 class="card-title text-center text-uppercase mb-4">FAÇA SUA RESERVA</h2>
-                            <form id="reservaForm">
-                                <div id="mensagemErro" class="alert alert-danger d-none" role="alert"></div>
-                                <div class="mb-3">
-                                    <label for="dataReserva" class="form-label">Data da Reserva</label>
-                                    <input type="date" class="form-control" id="dataReserva" min="" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="horaReserva" class="form-label">Horário da Reserva</label>
-                                    <select class="form-select" id="horaReserva" required>
-                                        <option value="" selected disabled>HORÁRIOS</option>
-                                        <option value="1">13:00</option>
-                                        <option value="2">13:30</option>
-                                        <option value="3">14:00</option>
-                                        <option value="4">14:30</option>
-                                        <option value="5">15:00</option>
-                                        <option value="6">15:30</option>
-                                        <option value="7">16:00</option>
-                                        <option value="8">16:30</option>
-                                        <option value="9">17:00</option>
-                                        <option value="10">17:30</option>
-                                        <option value="11">18:00</option>
-                                        <option value="12">18:30</option>
-                                        <option value="13">19:00</option>
-                                        <option value="14">19:30</option>
-                                        <option value="15">20:00</option>
-                                        <option value="16">20:30</option>
-                                        <option value="17">21:00</option>
-                                        <option value="18">21:30</option>
-                                        <option value="19">22:00</option>
-                                    </select>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="qtdMesas" class="form-label">Quantidade de Mesas</label>
-                                    <select class="form-select" id="qtdMesas" required>
-                                        <option selected disabled>Escolha uma opção</option>
-                                        <option value="1">1 Mesa</option>
-                                        <option value="2">2 Mesas</option>
-                                        <option value="3">3 Mesas</option>
-                                        <option value="4">4 Mesas</option>
-                                        <option value="5">5 Mesas</option>
-                                    </select>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="qtdPessoas" class="form-label">Quantidade de Pessoas</label>
-                                    <select class="form-select" id="qtdPessoas" required>
-                                        <option selected disabled>Escolha uma opção</option>
-                                        <option value="1">1 Pessoa</option>
-                                        <option value="2">2 Pessoas</option>
-                                        <option value="3">3 Pessoas</option>
-                                        <option value="4">4 Pessoas</option>
-                                        <option value="5">5 Pessoas</option>
-                                        <option value="6">7+ Pessoas</option>
-                                    </select>
-                                </div>
-                                <div class="d-grid">
-                                    <button type="submit" class="btn btn-dark text-uppercase">Confirmar Reserva</button>
-                                </div>
-                            </form>
+    <header class="header-reservas">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img class="img-logo" src="public/img/logo-favincon/Logo.jpg" alt="Cucina di Nonna">
+            </a>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <div class="wrapper">
+            <section class="restaurant" id="tabela">
+                <div class="row justify-content-center">
+                    <div class="col-lg-5 col-md-8 mb-4">
+                        <div class="card rounded-0 h-100" style="background-color: #76d59a; border: none;">
+                            <div class="card-body p-4">
+                                <h2 class="card-title text-center text-uppercase mb-4">FAÇA SUA RESERVA</h2>
+                                <form id="reservaForm">
+                                    <div id="mensagemErro" class="alert alert-danger d-none" role="alert"></div>
+
+                                    <div class="mb-3">
+                                        <label for="nomeReserva" class="form-label">Nome Completo</label>
+                                        <input type="text" class="form-control" id="nomeReserva" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="telefoneReserva" class="form-label">Telefone</label>
+                                        <input type="tel" class="form-control" id="telefoneReserva"
+                                            placeholder="(XX) XXXXX-XXXX" required>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="dataReserva" class="form-label">Data da Reserva</label>
+                                        <input type="date" class="form-control" id="dataReserva" min="" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="horaReserva" class="form-label">Horário da Reserva</label>
+                                        <select class="form-select" id="horaReserva" required>
+                                            <option value="" selected disabled>HORÁRIOS</option>
+                                            <option value="1">13:00</option>
+                                            <option value="2">13:30</option>
+                                            <option value="3">14:00</option>
+                                            <option value="4">14:30</option>
+                                            <option value="5">15:00</option>
+                                            <option value="6">15:30</option>
+                                            <option value="7">16:00</option>
+                                            <option value="8">16:30</option>
+                                            <option value="9">17:00</option>
+                                            <option value="10">17:30</option>
+                                            <option value="11">18:00</option>
+                                            <option value="12">18:30</option>
+                                            <option value="13">19:00</option>
+                                            <option value="14">19:30</option>
+                                            <option value="15">20:00</option>
+                                            <option value="16">20:30</option>
+                                            <option value="17">21:00</option>
+                                            <option value="18">21:30</option>
+                                            <option value="19">22:00</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="qtdMesas" class="form-label">Quantidade de Mesas</label>
+                                        <select class="form-select" id="qtdMesas" required>
+                                            <option selected disabled>Escolha uma opção</option>
+                                            <option value="1">1 Mesa</option>
+                                            <option value="2">2 Mesas</option>
+                                            <option value="3">3 Mesas</option>
+                                            <option value="4">4 Mesas</option>
+                                            <option value="5">5 Mesas</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="qtdPessoas" class="form-label">Quantidade de Pessoas</label>
+                                        <select class="form-select" id="qtdPessoas" required>
+                                            <option selected disabled>Escolha uma opção</option>
+                                            <option value="1">1 Pessoa</option>
+                                            <option value="2">2 Pessoas</option>
+                                            <option value="3">3 Pessoas</option>
+                                            <option value="4">4 Pessoas</option>
+                                            <option value="5">5 Pessoas</option>
+                                            <option value="6">7+ Pessoas</option>
+                                        </select>
+                                    </div>
+                                    <div class="d-grid">
+                                        <button type="submit" class="btn btn-dark text-uppercase">Confirmar
+                                            Reserva</button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div id="cards-reservas" class="container-card-reserva"></div>
-        </section>
-    </div>
-</div>
+                <div id="cards-reservas" class="container-card-reserva"></div>
+            </section>
+        </div>
+    </main>
 
     <footer class="footer-luxury">
         <div class="footer-top">
@@ -171,16 +171,13 @@
                             &copy; 2025 <strong>Cucina di Nonna</strong>. Todos os direitos reservados.
                         </div>
                     </div>
-
-                    </div>
                 </div>
             </div>
         </div>
     </footer>
-    <!-- FOOTER FIM -->
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="public/js/app.js"></script>
-<script src="public/js/reservas.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="public/js/app.js"></script>
+    <script src="public/js/reservas.js"></script>
 </body>
 </html>
