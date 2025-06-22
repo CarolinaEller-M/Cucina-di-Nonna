@@ -62,11 +62,8 @@ Atualizado em: 22/06/2025
 | Maria Eduarda       | Página de Catão Presente        | 19/05/2025     | 14/06/2025 | ✔️    | 24/05/2025      |
 | Lucas Barbosa     | Página Sobre        |  01/06/2025   | 14/06/2025 | ✔️    |   20/06/2025   |
 | Octavio Vieira       | Página SAC        | 20/05/2025     | 14/06/2025 | ✔️    |   20/06/2025   |
-Legenda:
-- ✔️: terminado
-- 📝: em execução
-- ⌛: atrasado
-- ❌: não iniciado
+| Legenda:       | ✔️: terminado      | 📝: em execução       | ⌛: atrasado       | ❌: não iniciado    |
+
 
 ## Ferramentas
 
