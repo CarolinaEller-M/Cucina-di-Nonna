@@ -20,9 +20,13 @@ _Para o sistema de reservas do Cucina di Nonna, identificamos três personas pri
 ## Histórias de Usuários
 EU COMO...	QUERO/PRECISO...	PARA...
 
->Eu como usuario, gostaria de reservar mesa online para 4 pessoas, para evitar esperar no restaurante com crianças pequenas.
->Eu como cliente, quero escolher mesa em área mais silenciosa, para ter reuniões de trabalho sem interrupções.
->Como cliente, preciso de horários disponíveis em tempo real, para decidir na hora se vão ao restaurante sem depender de telefonemas.
+>Eu como usuário, quero reservar uma mesa online para 4 pessoas, para evitar esperar no restaurante até que consiga uma mesa pois tenho crianças pequenas.
+>
+>Eu como cliente, quero escolher uma mesa em área mais silenciosa, para ter reuniões de trabalho sem interrupções e pertubações.
+>
+>Eu como cliente, quero ter acesso aos horários disponíveis em tempo real, para não depender de telefonemas para conseguir essa informação.
+>
+>Eu como proprietário, quero acompanhar as reservas de mesa do meu restaurante e quem as solicitou, para ter um controle administrativo melhor do meu estabelecimento
 
 ## Requisitos
 
@@ -64,6 +68,7 @@ _RNF-003 - Estabilidade garantida_
 - Backup automático diário dos dados
 
 ## Restrições
-ID	Restrição
-01	Entregar o projeto até o final do semestre
-02	Usar apenas tecnologias web (sem app nativo)
+
+01 - Entregar o projeto até o final do semestre
+
+02 - Usar apenas tecnologias web (sem app nativo)
