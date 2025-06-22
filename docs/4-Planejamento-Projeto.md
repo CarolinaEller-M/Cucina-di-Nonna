@@ -10,7 +10,7 @@
 - _Scrum master_: João Vitor Miranda
 - Protótipos: João Vitor Miranda
 - Documentação: Davi Santana Pinheiro Andrade
-- Documentação: Octávio Vieira de Oliveira
+- Documentação: Octávio Vieira de Azevedo
 - Documentação: Breno de Oliveira Hassel
 - Documentação: Hamilton Henrique Gomes
 - Documentação: Maria Eduarda Botelho
@@ -23,7 +23,7 @@
 - Desenvolvedor _back-end_: Breno de Oliveira Hassel
 - Desenvolvedor _back-end_: Lucas Barbosa Marques
 - Desenvolvedor _back-end_: Davi Santana Pinheiro Andrade
-- Testes: Octávio Vieira de Oliveira
+- Testes: Octávio Vieira de Azevedo
 - Documentação: Carolina Eller Marinho de Paula
 - Documentação: Maria Eduarda Botelho
 
