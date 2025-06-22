@@ -50,18 +50,18 @@ Atualizado em: 26/04/2025
 
 ## Sprint 2
 
-Atualizado em: 14/06/2025
+Atualizado em: 22/06/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
 | Carolina Eller        | Home-Page        | 17/05/2025     | 14/06/2025 | ✔️    | 23/05/2025      |
-| João Vitor        | Página de login  | 20/05/2024     | 14/06/2025 | 📝     |                 |
+| João Vitor        | Página de login  | 20/05/2024     | 14/06/2025 | ✔️     |  20/06/2025      |
 | Hamiltom Gomes        | Página Sobre |      | 14/06/2025 | ❌    |       |
-| Davi Santana        | Página de Reservas  | 20/05/2024     | 14/06/2025 | 📝     |                 |
+| Davi Santana        | Página de Reservas  | 20/05/2024     | 14/06/2025 | ✔️     |   20/06/2025    |
 | Breno de Oliveira       | Página de Cardápio        | 20/05/2025     | 14/06/2025 | ✔️    | 13/06/2025      |
 | Maria Eduarda       | Página de Catão Presente        | 19/05/2025     | 14/06/2025 | ✔️    | 24/05/2025      |
-| Lucas Barbosa     | Página Sobre        |  01/06/2025   | 14/06/2025 | 📝    |      |
-| Octavio Vieira       | Página SAC        | 20/05/2025     | 14/06/2025 | 📝    |       |
+| Lucas Barbosa     | Página Sobre        |  01/06/2025   | 14/06/2025 | ✔️    |   20/06/2025   |
+| Octavio Vieira       | Página SAC        | 20/05/2025     | 14/06/2025 | ✔️    |   20/06/2025   |
 Legenda:
 - ✔️: terminado
 - 📝: em execução
@@ -74,10 +74,10 @@ Legenda:
 
 As ferramentas empregadas no projeto são:
 
-- Editor de código.
+- Editor de código. (Visual Studio Code e Replit)
 - Ferramentas de diagramação.
-- Frameworks 
-- Outras ferramentas externas
+- Frameworks.
+- Outras ferramentas externas.
 
 
 ## Links Úteis
