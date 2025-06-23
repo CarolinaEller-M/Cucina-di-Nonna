@@ -19,8 +19,12 @@
 
 Coloque aqui os slides da apresentação
 
+[Slide](./docs/apresentacao/TIAW SLIDE.pdf)
+
 ## Vídeo
 
 No caso de apresentação gravada, insira aqui o link do vídeo de apresentação.
 
 https://youtu.be/xXVu6BJei7E
+
+[Vídeo](./docs/apresentacao/video.mp4)

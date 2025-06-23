@@ -15,7 +15,7 @@ Especificações do Projeto
 >Perfil: Gostam de sair para jantares românticos, mas muitas vezes deixam para reservar em cima da hora.
 >Necessidade: Querem ver disponibilidade em tempo real e receber confirmação imediata da reserva.
 
-(FOTO DAS PERSONAS, ATUALIZAR ACIMA)
+[Foto das Personas](./docs/images/PERSONAS)
 
 ## Histórias de Usuários
 EU COMO...	QUERO/PRECISO...	PARA...
