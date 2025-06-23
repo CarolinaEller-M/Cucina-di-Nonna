@@ -27,4 +27,3 @@ No caso de apresentação gravada, insira aqui o link do vídeo de apresentaçã
 
 https://youtu.be/xXVu6BJei7E
 
-[Vídeo](./docs/apresentacao/video.mp4)
