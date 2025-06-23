@@ -19,7 +19,11 @@
 
 Coloque aqui os slides da apresentação
 
+<<<<<<< HEAD
 [Slide](docs/apresentacao/TIAW SLIDE.pdf)
+=======
+[Slide](TIAW SLIDE.pdf)
+>>>>>>> a98889606f5d57e81ef9d91b1e9491e9e25d35a6
 
 ## Vídeo
 
