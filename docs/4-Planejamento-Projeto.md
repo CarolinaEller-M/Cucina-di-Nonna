@@ -72,7 +72,7 @@ Atualizado em: 22/06/2025
 
 As ferramentas empregadas no projeto são:
 
-- Editor de código. (Visual Studio Code e Replit)
+- Editor de código. (Visual Studio e Replit)
 - Ferramentas de diagramação.
 - Frameworks.
 - Outras ferramentas externas.
