@@ -15,11 +15,17 @@ RESERVAS DE RESTAURANTE - CUCINA DI NONNA
 Os membros do grupo são: 
 
 >Breno de Oliveira Hassel
+>
 >Carolina Eller Marinho de Paula
+>
 >Davi Santana Pinheiro Andrade
+>
 >João Vitor Miranda Pinto
+>
 >Lucas Barbosa Marques
+>
 >Maria Eduarda Botelho
+>
 >Octavio Vieira de Azevedo
 
 
