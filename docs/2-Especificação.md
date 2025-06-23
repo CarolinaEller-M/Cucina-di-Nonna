@@ -1,7 +1,7 @@
 Especificações do Projeto
 ## Personas
 
-_Para o sistema de reservas do Cucina di Nonna, identificamos três personas principais:_
+*Para o sistema de reservas do Cucina di Nonna, identificamos três personas principais:*
 
 >Ana Clara, 32 anos, mãe de família
 >Perfil: Trabalha em home office e adora levar a família para jantar fora nos fins de semana.
